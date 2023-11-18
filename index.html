@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Лабораторна робота 12</title>
+</head>
+<body>
+    <div class="container">
+
+        <div id="difficulty-selector">
+            <label for="difficulty">Select Difficulty:</label>
+            <select id="difficulty" name="difficulty">
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+        </div>
+
+        <h1>Language Learning App</h1>
+        <div id="card-container" class="card-container"></div>
+        <div id="feedback" class="feedback">
+            <p>Step <span id="current-step">1</span>/<span id="total-steps">10</span></p>
+            <p>Correct: <span id="correct-count">0</span></p>
+            <p>Incorrect: <span id="incorrect-count">0</span></p>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Language Proficiency Level</h2>
+            <p id="proficiency-level">Beginner</p>
+        </div>
+        <div id="user-responses" class="user-responses"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
